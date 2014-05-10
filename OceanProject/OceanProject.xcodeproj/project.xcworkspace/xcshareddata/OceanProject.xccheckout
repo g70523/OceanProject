@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F97D5698-5567-4120-A786-5FEA78C9EFE1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>OceanProject</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>84125875-6372-49B2-A31A-2F59A1FEEA5B</key>
+		<string>https://github.com/g70523/OceanProject.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>OceanProject/OceanProject.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>84125875-6372-49B2-A31A-2F59A1FEEA5B</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/g70523/OceanProject.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>84125875-6372-49B2-A31A-2F59A1FEEA5B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>84125875-6372-49B2-A31A-2F59A1FEEA5B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>OceanProject</string>
+		</dict>
+	</array>
+</dict>
+</plist>
