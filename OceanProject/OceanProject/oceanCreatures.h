@@ -24,8 +24,12 @@ typedef enum
     NSString* nameOfCreature;
     int sizeOfcreature;
     bool mamal;
+    
+    
 }
 
 -(void)CreateOceanCreature:(MySeaCreatures)type name:(NSString*)name int:(int)size areYouAmamal:(bool)areYouAmamal;
-
+-(NSString*)showCreatures;
+-(int)showSize;
+-(NSString*)mamalQuestion;
 @end

@@ -22,6 +22,24 @@
     mamal = areYouAmamal;
 
 }
+-(NSString*)showCreatures
+{
+    return nameOfCreature;
+}
+-(int)showSize
+{
+    return sizeOfcreature;
+}
+-(NSString*)mamalQuestion
+{
+    if(mamal)
+    {
+        return @"And yes I am a mamal!";
+    }else{
+        return @"And no I am not a mamal!";
+    }
+    
+}
 
 
 @end

@@ -10,5 +10,13 @@
 #import "OceanCreatures.h"
 
 @interface ViewController : UIViewController
+{
+    UILabel *oceanLabel;
+    UILabel *turtleLabel;
+    UILabel *dolphinLabel;
+    UILabel *sharkLabel;
+    UILabel *whaleLabel;
+
+}
 
 @end
