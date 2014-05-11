@@ -7,7 +7,10 @@
 //
 
 #import "ViewController.h"
-
+#import "OceanTurtle.h"
+#import "OceanShark.h"
+#import "OceanWhale.h"
+#import "OceanDolphin.h"
 @interface ViewController ()
 
 @end
@@ -16,6 +19,11 @@
 
 - (void)viewDidLoad
 {
+    OceanTurtle *turtle = [[OceanTurtle alloc] init];
+    if (turtle != nil)
+    {
+        
+    }
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

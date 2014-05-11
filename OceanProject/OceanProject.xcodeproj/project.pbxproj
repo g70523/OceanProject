@@ -21,6 +21,11 @@
 		D722792C191EE9DD00F53627 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D722790E191EE9DD00F53627 /* UIKit.framework */; };
 		D7227934191EE9DD00F53627 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7227932191EE9DD00F53627 /* InfoPlist.strings */; };
 		D7227936191EE9DD00F53627 /* OceanProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7227935191EE9DD00F53627 /* OceanProjectTests.m */; };
+		D7227944191EEB4000F53627 /* OceanCreatures.m in Sources */ = {isa = PBXBuildFile; fileRef = D7227943191EEB4000F53627 /* OceanCreatures.m */; };
+		D7227947191EEE0100F53627 /* OceanTurtle.m in Sources */ = {isa = PBXBuildFile; fileRef = D7227946191EEE0100F53627 /* OceanTurtle.m */; };
+		D722794A191EEE8C00F53627 /* OceanShark.m in Sources */ = {isa = PBXBuildFile; fileRef = D7227949191EEE8C00F53627 /* OceanShark.m */; };
+		D722794D191EEEB800F53627 /* OceanDolphin.m in Sources */ = {isa = PBXBuildFile; fileRef = D722794C191EEEB800F53627 /* OceanDolphin.m */; };
+		D7227950191EEEDF00F53627 /* OceanWhale.m in Sources */ = {isa = PBXBuildFile; fileRef = D722794F191EEEDF00F53627 /* OceanWhale.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,16 @@
 		D7227931191EE9DD00F53627 /* OceanProjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OceanProjectTests-Info.plist"; sourceTree = "<group>"; };
 		D7227933191EE9DD00F53627 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D7227935191EE9DD00F53627 /* OceanProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OceanProjectTests.m; sourceTree = "<group>"; };
+		D7227942191EEB4000F53627 /* OceanCreatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OceanCreatures.h; sourceTree = "<group>"; };
+		D7227943191EEB4000F53627 /* OceanCreatures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OceanCreatures.m; sourceTree = "<group>"; };
+		D7227945191EEE0100F53627 /* OceanTurtle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OceanTurtle.h; sourceTree = "<group>"; };
+		D7227946191EEE0100F53627 /* OceanTurtle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OceanTurtle.m; sourceTree = "<group>"; };
+		D7227948191EEE8C00F53627 /* OceanShark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OceanShark.h; sourceTree = "<group>"; };
+		D7227949191EEE8C00F53627 /* OceanShark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OceanShark.m; sourceTree = "<group>"; };
+		D722794B191EEEB800F53627 /* OceanDolphin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OceanDolphin.h; sourceTree = "<group>"; };
+		D722794C191EEEB800F53627 /* OceanDolphin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OceanDolphin.m; sourceTree = "<group>"; };
+		D722794E191EEEDF00F53627 /* OceanWhale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OceanWhale.h; sourceTree = "<group>"; };
+		D722794F191EEEDF00F53627 /* OceanWhale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OceanWhale.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +134,16 @@
 				D7227920191EE9DD00F53627 /* ViewController.m */,
 				D7227922191EE9DD00F53627 /* Images.xcassets */,
 				D7227911191EE9DD00F53627 /* Supporting Files */,
+				D7227942191EEB4000F53627 /* OceanCreatures.h */,
+				D7227943191EEB4000F53627 /* OceanCreatures.m */,
+				D7227945191EEE0100F53627 /* OceanTurtle.h */,
+				D7227946191EEE0100F53627 /* OceanTurtle.m */,
+				D7227948191EEE8C00F53627 /* OceanShark.h */,
+				D7227949191EEE8C00F53627 /* OceanShark.m */,
+				D722794B191EEEB800F53627 /* OceanDolphin.h */,
+				D722794C191EEEB800F53627 /* OceanDolphin.m */,
+				D722794E191EEEDF00F53627 /* OceanWhale.h */,
+				D722794F191EEEDF00F53627 /* OceanWhale.m */,
 			);
 			path = OceanProject;
 			sourceTree = "<group>";
@@ -250,8 +275,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7227921191EE9DD00F53627 /* ViewController.m in Sources */,
+				D722794D191EEEB800F53627 /* OceanDolphin.m in Sources */,
 				D722791B191EE9DD00F53627 /* AppDelegate.m in Sources */,
 				D7227917191EE9DD00F53627 /* main.m in Sources */,
+				D7227947191EEE0100F53627 /* OceanTurtle.m in Sources */,
+				D722794A191EEE8C00F53627 /* OceanShark.m in Sources */,
+				D7227950191EEEDF00F53627 /* OceanWhale.m in Sources */,
+				D7227944191EEB4000F53627 /* OceanCreatures.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
