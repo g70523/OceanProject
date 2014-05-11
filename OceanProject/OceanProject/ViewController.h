@@ -16,7 +16,9 @@
     UILabel *dolphinLabel;
     UILabel *sharkLabel;
     UILabel *whaleLabel;
+    UILabel *compare;
 
+    
 }
-
+-(int)compareCreatures;
 @end

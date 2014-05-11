@@ -22,21 +22,35 @@
     mamal = areYouAmamal;
 
 }
+//tells user the name of a specific ocean creature
 -(NSString*)showCreatures
 {
     return nameOfCreature;
 }
+//tells user how big in feet a creature is
 -(int)showSize
 {
     return sizeOfcreature;
 }
+//tells user if the creature is a mamal or not
 -(NSString*)mamalQuestion
 {
     if(mamal)
     {
         return @"And yes I am a mamal!";
+        
     }else{
+        
         return @"And no I am not a mamal!";
+    }
+    
+}
+-(NSString*)compareUs:(MySeaCreatures)type size1:(int)size1 size2:(int)size2
+{
+    if (size1 > size2) {
+        return [NSString stringWithFormat:@"%d",size1];
+    }else{
+        return [NSString stringWithFormat:@"%d",size2];
     }
     
 }

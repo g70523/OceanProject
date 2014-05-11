@@ -32,4 +32,6 @@ typedef enum
 -(NSString*)showCreatures;
 -(int)showSize;
 -(NSString*)mamalQuestion;
+-(NSString*)compareUs:(MySeaCreatures)type size1:(int)size1 size2:(int)size2;
+
 @end

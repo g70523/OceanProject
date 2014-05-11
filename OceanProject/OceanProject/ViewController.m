@@ -70,6 +70,10 @@
             [self.view addSubview:whaleLabel];
         
         }
+    
+        compare = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 500)];
+        compare.text = [NSString stringWithFormat:@"Hello %@",[OceanCreatures compareUs];
+  
 
     
     
