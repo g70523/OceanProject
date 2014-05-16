@@ -16,7 +16,7 @@
     if(self = [super init])
     {
     
-        [self CreateOceanCreature:SEACREATURE_TURTLE name:@"Tommy the Turtle" int:4 areYouAmamal:false];
+        [self CreateOceanCreature:SEACREATURE_TURTLE name:@"Tommy the Turtle" int:4 areYouAmamal:false int:100];
         
     }
     return self;

@@ -26,6 +26,7 @@
 		D722794A191EEE8C00F53627 /* OceanShark.m in Sources */ = {isa = PBXBuildFile; fileRef = D7227949191EEE8C00F53627 /* OceanShark.m */; };
 		D722794D191EEEB800F53627 /* OceanDolphin.m in Sources */ = {isa = PBXBuildFile; fileRef = D722794C191EEEB800F53627 /* OceanDolphin.m */; };
 		D7227950191EEEDF00F53627 /* OceanWhale.m in Sources */ = {isa = PBXBuildFile; fileRef = D722794F191EEEDF00F53627 /* OceanWhale.m */; };
+		D7227953192586BE00F53627 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7227952192586BE00F53627 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		D722794C191EEEB800F53627 /* OceanDolphin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OceanDolphin.m; sourceTree = "<group>"; };
 		D722794E191EEEDF00F53627 /* OceanWhale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OceanWhale.h; sourceTree = "<group>"; };
 		D722794F191EEEDF00F53627 /* OceanWhale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OceanWhale.m; sourceTree = "<group>"; };
+		D7227951192586BE00F53627 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		D7227952192586BE00F53627 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 				D7227919191EE9DD00F53627 /* AppDelegate.h */,
 				D722791A191EE9DD00F53627 /* AppDelegate.m */,
 				D722791C191EE9DD00F53627 /* Main.storyboard */,
+				D7227951192586BE00F53627 /* SecondViewController.h */,
+				D7227952192586BE00F53627 /* SecondViewController.m */,
 				D722791F191EE9DD00F53627 /* ViewController.h */,
 				D7227920191EE9DD00F53627 /* ViewController.m */,
 				D7227922191EE9DD00F53627 /* Images.xcassets */,
@@ -274,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7227953192586BE00F53627 /* SecondViewController.m in Sources */,
 				D7227921191EE9DD00F53627 /* ViewController.m in Sources */,
 				D722794D191EEEB800F53627 /* OceanDolphin.m in Sources */,
 				D722791B191EE9DD00F53627 /* AppDelegate.m in Sources */,
@@ -490,6 +496,7 @@
 				D722793B191EE9DD00F53627 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D722793C191EE9DD00F53627 /* Build configuration list for PBXNativeTarget "OceanProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +505,7 @@
 				D722793E191EE9DD00F53627 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

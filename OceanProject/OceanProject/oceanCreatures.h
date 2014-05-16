@@ -24,14 +24,17 @@ typedef enum
     NSString* nameOfCreature;
     int sizeOfcreature;
     bool mamal;
+    int weightOfcreature;
     
     
 }
 
--(void)CreateOceanCreature:(MySeaCreatures)type name:(NSString*)name int:(int)size areYouAmamal:(bool)areYouAmamal;
+-(void)CreateOceanCreature:(MySeaCreatures)type name:(NSString*)name int:(int)size areYouAmamal:(bool)areYouAmamal int:(int)weight;
 -(NSString*)showCreatures;
 -(int)showSize;
 -(NSString*)mamalQuestion;
 -(NSString*)compareUs:(MySeaCreatures)type size1:(int)size1 size2:(int)size2;
+-(int)addWeight:(int)weight1 add2:(int)weight2;
+-(int)getWeight;
 
 @end

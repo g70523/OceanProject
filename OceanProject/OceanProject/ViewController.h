@@ -18,7 +18,19 @@
     UILabel *whaleLabel;
     UILabel *compare;
 
+    IBOutlet UIButton *turtleButton;
+    IBOutlet UIButton *sharkButton;
+    IBOutlet UIButton *dolphinButton;
+    IBOutlet UIButton *whaleButton;
     
+    IBOutlet UITextView *text1;
+    IBOutlet UIStepper *stepper;
+    IBOutlet UILabel *stepperLabel;
 }
--(int)compareCreatures;
+-(IBAction)turtleOnPress:(id)sender;
+-(IBAction)sharkOnPress:(id)sender;
+-(IBAction)dolphinOnPress:(id)sender;
+-(IBAction)whaleOnPress:(id)sender;
+-(IBAction)stepUp:(id)sender;
+//-(int)compareCreatures;
 @end

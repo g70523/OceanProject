@@ -14,15 +14,32 @@
 
 @implementation OceanCreatures
 
--(void)CreateOceanCreature:(MySeaCreatures)type name:(NSString*)name int:(int)size areYouAmamal:(bool)areYouAmamal
+-(void)CreateOceanCreature:(MySeaCreatures)type name:(NSString*)name int:(int)size areYouAmamal:(bool)areYouAmamal int:(int)weight
 {
     
     nameOfCreature = name;
     sizeOfcreature = size;
     mamal = areYouAmamal;
+    weightOfcreature = weight;
+    
 
 }
 //tells user the name of a specific ocean creature
+-(int)getWeight
+{
+    return weightOfcreature;
+}
+
+-(int)addWeight:(int)weight1 add2:(int)weight2
+{
+    weight1 = weightOfcreature;
+    weight2 = weightOfcreature;
+    int sum = weight1 + weight2;
+      NSLog(@"%d", sum);
+    return weight1 + weight2;
+    
+}
+
 -(NSString*)showCreatures
 {
     return nameOfCreature;
@@ -31,6 +48,10 @@
 -(int)showSize
 {
     return sizeOfcreature;
+}
+-(int)creatureWeight
+{
+    return weightOfcreature;
 }
 //tells user if the creature is a mamal or not
 -(NSString*)mamalQuestion

@@ -18,68 +18,93 @@
 @end
 
 @implementation ViewController
+-(IBAction)stepUp:(id)sender
+{
+    UIStepper *stepperController = (UIStepper*)sender;
+  
+    if (stepperController != nil) {
+     
+        OceanTurtle *turtle = [[OceanTurtle alloc] init];
+        int step = stepper.value;
+        int weight = [turtle getWeight];
+        int newWeight = step * weight;
+        
+        
+        if (step == 0) {
+            stepperLabel.text = [NSString stringWithFormat:@"Tommy the Turtle weighs %d pounds!",weight];
+        }else if (step == 1)
+        {
+            stepperLabel.text = [NSString stringWithFormat:@"%d turtle weighs %d pounds!",step,weight];
+        }else if (step > 1)
+        {
+            stepperLabel.text = [NSString stringWithFormat:@"%d turtles would weigh %d pounds!",step,newWeight];
+            
+       }
+    
+    }
+    
+
+}
+-(IBAction)turtleOnPress:(id)sender
+{
+    turtleButton.enabled = NO;
+    sharkButton.enabled = YES;
+    dolphinButton.enabled = YES;
+    whaleButton.enabled = YES;
+    
+    OceanTurtle *turtle = [[OceanTurtle alloc] init];
+    if (turtle != nil)
+    {
+        text1.text = [NSString stringWithFormat:@"My name is %@ and I am %d feet long. %@", [turtle showCreatures],[turtle showSize],[turtle mamalQuestion]];
+    }
+
+}
+-(IBAction)sharkOnPress:(id)sender
+{
+    turtleButton.enabled = YES;
+    sharkButton.enabled = NO;
+    dolphinButton.enabled = YES;
+    whaleButton.enabled = YES;
+    
+    OceanShark *shark = [[OceanShark alloc] init];
+    if (shark != nil)
+    {
+        text1.text = [NSString stringWithFormat:@"My name is %@ and I am %d feet long. %@", [shark showCreatures],[shark showSize],[shark mamalQuestion]];
+        stepperLabel.text = [NSString stringWithFormat:@"Add the sharks weight!"];
+    }
+}
+-(IBAction)dolphinOnPress:(id)sender
+{
+    turtleButton.enabled = YES;
+    sharkButton.enabled = YES;
+    dolphinButton.enabled = NO;
+    whaleButton.enabled = YES;
+    
+    OceanDolphin *dolphin = [[OceanDolphin alloc] init];
+    if (dolphin != nil)
+    {
+        text1.text = [NSString stringWithFormat:@"My name is %@ and I am %d feet long. %@", [dolphin showCreatures],[dolphin showSize],[dolphin mamalQuestion]];
+        stepperLabel.text = [NSString stringWithFormat:@"Add the dolphins weight!"];
+    }
+}
+-(IBAction)whaleOnPress:(id)sender
+{
+    turtleButton.enabled = YES;
+    sharkButton.enabled = YES;
+    dolphinButton.enabled = YES;
+    whaleButton.enabled = NO;
+    
+    OceanWhale *whale = [[OceanWhale alloc] init];
+    if (whale != nil)
+    {
+        text1.text = [NSString stringWithFormat:@"My name is %@ and I am %d feet long. %@", [whale showCreatures],[whale showSize],[whale mamalQuestion]];
+        stepperLabel.text = [NSString stringWithFormat:@"Add the whales weight!"];
+    }
+}
 
 - (void)viewDidLoad
 {
    
-        
-        
-        OceanTurtle *turtle = [[OceanTurtle alloc] init];
-        if (turtle != nil)
-        {
-            turtleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
-            turtleLabel.text = [NSString stringWithFormat:@"My name is %@ and I am %d feet long. %@", [turtle showCreatures],[turtle showSize],[turtle mamalQuestion]];
-            turtleLabel.numberOfLines=2;
-            turtleLabel.textAlignment = NSTextAlignmentCenter;
-            
-            [self.view addSubview:turtleLabel];
-        }
-    
-        OceanDolphin *dolphin = [[OceanDolphin alloc] init];
-        if (dolphin != nil)
-        {
-            dolphinLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 200)];
-            dolphinLabel.text = [NSString stringWithFormat:@"My name is %@ and I am %d feet long. %@", [dolphin showCreatures],[dolphin showSize],[dolphin mamalQuestion]];
-            dolphinLabel.numberOfLines=2;
-            dolphinLabel.textAlignment = NSTextAlignmentCenter;
-            
-            [self.view addSubview:dolphinLabel];
-            
-        }
-    
-        OceanShark *shark = [[OceanShark alloc] init];
-        if (shark != nil)
-        {
-            sharkLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 300)];
-            sharkLabel.text = [NSString stringWithFormat:@"My name is %@ and I am %d feet long. %@", [shark showCreatures],[shark showSize],[shark mamalQuestion]];
-            sharkLabel.numberOfLines=2;
-            sharkLabel.textAlignment = NSTextAlignmentCenter;
-            
-            [self.view addSubview:sharkLabel];
-        
-        }
-    
-        OceanWhale *whale = [[OceanWhale alloc] init];
-        if (whale != nil)
-        {
-            whaleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 400)];
-            whaleLabel.text = [NSString stringWithFormat:@"My name is %@ and I am %d feet long. %@", [whale showCreatures],[whale showSize],[whale mamalQuestion]];
-            whaleLabel.numberOfLines=2;
-            whaleLabel.textAlignment = NSTextAlignmentCenter;
-            
-            [self.view addSubview:whaleLabel];
-        
-        }
-    
-        compare = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 500)];
-        compare.text = [NSString stringWithFormat:@"Hello %@",[OceanCreatures compareUs];
-  
-
-    
-    
-   
-    
-    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

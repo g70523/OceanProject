@@ -16,7 +16,7 @@
     if(self = [super init])
     {
         
-        [self CreateOceanCreature:SEACREATURE_DOLPHIN name:@"Dom the Dolphin" int:8 areYouAmamal:true];
+        [self CreateOceanCreature:SEACREATURE_DOLPHIN name:@"Dom the Dolphin" int:8 areYouAmamal:true int:500];
         
     }
     return self;
